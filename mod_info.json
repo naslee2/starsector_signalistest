@@ -1,0 +1,16 @@
+{
+    "id": "signalistest",
+    "name": "signalis test",
+    "author": "homete",
+    "version": "0.1 test",
+    "description": "homete",
+    "gameVersion": "0.95.1a-RC6",
+    "dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib"
+        }
+    ],
+    "jars":["jars/signalistest.jar"],
+	"modPlugin":"data.scripts.signalistest"
+}
