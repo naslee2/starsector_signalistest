@@ -3,7 +3,7 @@
     "name": "signalis test",
     "author": "homete",
     "version": "0.1 test",
-    "description": "homete!",
+    "description": "Bare bones system of the star system featured in the game Signalis. Release v0.1 and works with Starsector 0.95.1a-RC6. Special Thanks to contributors: TheFrommie86 (art), StrixBerseria (art)",
     "gameVersion": "0.95.1a-RC6",
     "dependencies": [
         {

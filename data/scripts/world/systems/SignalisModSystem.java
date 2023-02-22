@@ -10,6 +10,11 @@ import com.fs.starfarer.api.impl.campaign.ids.Terrain;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames;
 //import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
+//import com.fs.starfarer.api.campaign.econ.EconomyAPI;
+//import com.fs.starfarer.api.campaign.econ.MarketAPI;
+//import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
+//import com.fs.starfarer.api.impl.campaign.ids.Industries;
+//import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
 
@@ -41,7 +46,7 @@ public class SignalisModSystem {
 
         //PlanetAPI stream = system.addPlanet("stream"[ID], star[What it orbits], "Stream"[Name you will see in game], "gas_giant"[Planet type], 230[Starring angle of the orbit], 350[Size in pixels, 5000[Orbit Radius], 150[Number of ingame days to complete orbit]);
 
-        //BUYAN - Toxic World
+        //-BUYAN - Toxic World-
         PlanetAPI buyan = system.addPlanet("signalis_buyan", signalisStar , "Buyan", "toxic", 30f, 170f, 2000f, 225f);
         ProcgenUsedNames.notifyUsed("Buyan");
         buyan.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
@@ -51,9 +56,11 @@ public class SignalisModSystem {
         buyan.getMarket().addCondition(Conditions.ORGANICS_COMMON);
         buyan.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
         buyan.getMarket().addCondition(Conditions.RUINS_EXTENSIVE);
+        
         //buyan.setCustomDescriptionId("signalis_buyan_planet");
+        //buyan.setFaction("signalis_eusan_nation");
 
-        //VINETA AND THE SHATTERED MOON AND DEBRIS RING - Terran world? Water World?
+        //-VINETA AND THE SHATTERED MOON AND DEBRIS RING- Terran world? Water World?
         PlanetAPI vineta = system.addPlanet("signalis_vineta", signalisStar, "Vineta", "water", 88f, 190f, 6000f, 360f);
         vineta.getMarket().addCondition(Conditions.HABITABLE);
         vineta.getMarket().addCondition(Conditions.MILD_CLIMATE);
@@ -61,7 +68,9 @@ public class SignalisModSystem {
         vineta.getMarket().addCondition(Conditions.ORE_MODERATE);
         vineta.getMarket().addCondition(Conditions.ORGANICS_ABUNDANT);
         vineta.getMarket().addCondition(Conditions.WATER_SURFACE);
+        
         //vineta.setCustomDescriptionId("signalis_vineta_planet");
+        //vineta.setFaction("signalis_eusan_nation");
 
         PlanetAPI shattered_moon = system.addPlanet("signalis_shattered_moon", vineta, "Shattered Moon", "barren", 270f, 90f, 750f, 31f);
         shattered_moon.getMarket().addCondition(Conditions.LOW_GRAVITY);
@@ -71,7 +80,8 @@ public class SignalisModSystem {
 
         system.addRingBand(vineta, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 740f, 305f, null, null);
 
-        //KITZEH - Arid World
+
+        //-KITZEH - Arid World-
         PlanetAPI kitezh = system.addPlanet("signalis_kitezh", signalisStar, "Kitezh", "arid", 310f, 120f, 8000f, 687f);
         ProcgenUsedNames.notifyUsed("Kitezh");
         kitezh.getMarket().addCondition(Conditions.HABITABLE);
@@ -79,9 +89,11 @@ public class SignalisModSystem {
         kitezh.getMarket().addCondition(Conditions.ORE_MODERATE);
         kitezh.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
         kitezh.getMarket().addCondition(Conditions.LOW_GRAVITY);
+        
         //kitezh.setCustomDescriptionId("signalis_kitezh_planet");
+        //kitezh.setFaction("signalis_eusan_nation");
 
-        //AsteroidBelt //starsector-core\graphics\planets
+        //-AsteroidBelt- //starsector-core\graphics\planets
         system.addAsteroidBelt(signalisStar, 1000, 10000f, 256f, 300f, 350f, Terrain.ASTEROID_BELT, "Asteroid Ring");
         system.addRingBand(signalisStar, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, 10200f, 400f);
         system.addRingBand(signalisStar, "misc", "rings_asteroids0", 256f, 0, Color.gray, 256f, 10000f, 400f);
@@ -90,7 +102,7 @@ public class SignalisModSystem {
         //SectorEntityToken asteroidfield1 = system.addTerrain(Terrain.ASTEROID_BELT, new AsteroidFieldTerrainPlugin.AsteroidFieldParams(200f, 300f, 8, 16, 4f, 16f, "Asteroids Field"));
         //asteroidfield1.setCircularOrbit(signalisStar, 330f, 10000f, 400f);
 
-        //GAS GIANT 1, DUST RINGS AND ROTFRONT
+        //-GAS GIANT 1, DUST RINGS AND ROTFRONT-
         PlanetAPI gas_giant1 = system.addPlanet("signalis_gas_giant1", signalisStar, "Jove", "gas_giant", 234f, 400f, 12500f, 4330f);
         gas_giant1.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
         gas_giant1.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
@@ -104,11 +116,14 @@ public class SignalisModSystem {
         rotfront.getMarket().addCondition(Conditions.ORGANICS_COMMON);
         rotfront.getMarket().addCondition(Conditions.ORE_SPARSE);
         rotfront.getMarket().addCondition(Conditions.LOW_GRAVITY);
+        
         //rotfront.setCustomDescriptionId("signalis_rotfront_planet");
+        //rotfront.setFaction("signalis_eusan_nation");
 
         system.addRingBand(gas_giant1, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 1000f, 300f);
 
-        //GAS GIANT 2, PRETTY RINGS AND HEIMAT 
+        
+        //-GAS GIANT 2, PRETTY RINGS AND HEIMAT-
         PlanetAPI gas_giant2 = system.addPlanet("signalis_gas_giant2", signalisStar, "Saturnus", "gas_giant", 90f, 370f, 14500f, 1076f);
         gas_giant2.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
         gas_giant2.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
@@ -122,13 +137,14 @@ public class SignalisModSystem {
         heimat.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
         heimat.getMarket().addCondition(Conditions.LOW_GRAVITY);
         heimat.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
+        
         //heimat.setCustomDescriptionId("signalis_heimat_planet");
+        //heimat.setFaction("signalis_eusan_nation");
 
         system.addRingBand(gas_giant2, "misc", "rings_special0", 256f, 0, Color.white, 256f, 500f, 60f);
         system.addRingBand(gas_giant2, "misc", "rings_special0", 256f, 1, Color.white, 256f, 700f, 60f);
 
-
-        //LENG
+        //-LENG-
         PlanetAPI leng = system.addPlanet("signalis_leng", signalisStar, "Leng", "barren", 180, 80f, 16400f, 3050f);
         ProcgenUsedNames.notifyUsed("Leng");
         leng.getMarket().addCondition(Conditions.COLD);
@@ -137,7 +153,9 @@ public class SignalisModSystem {
         leng.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
         leng.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         leng.getMarket().addCondition(Conditions.RARE_ORE_MODERATE);
+        
         //leng.setCustomDescriptionId("signalis_leng_planet");
+        //leng.setFaction("signalis_eusan_nation");
     
         cleanup(system);
     }
