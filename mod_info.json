@@ -4,7 +4,7 @@
     "author": "homete",
     "version": "0.1.1",
     "description": "Barebone starsystem based on the starsystem feature from the game Signalis",
-    "gameVersion": "0.96a",
+    "gameVersion": "0.96a-RC10",
     "dependencies": [
     ],
     "jars":["jars/signalistest.jar"],
