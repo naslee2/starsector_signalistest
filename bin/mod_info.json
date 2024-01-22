@@ -2,8 +2,8 @@
     "id": "signalistest",
     "name": "signalis test",
     "author": "homete",
-    "version": "0.1 test",
-    "description": "homete!",
+    "version": "0.1.1",
+    "description": "Barebone starsystem based on the starsystem feature from the game Signalis",
     "gameVersion": "0.95.1a-RC6",
     "dependencies": [
         {
