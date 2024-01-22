@@ -3,7 +3,6 @@ import data.scripts.world.SignalisModGen;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 
 public class signalistest extends BaseModPlugin{
 
