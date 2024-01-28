@@ -32,7 +32,7 @@ public class SignalisModSystem {
         //Setting stable locations setCircularOrbitPointingDown(location/star/planet, angle, orbit raidus/range, orbit period)
         stableLoc1.setCircularOrbitPointingDown(signalisStar, 40f, 4200f, 220f);
         stableLoc2.setCircularOrbitPointingDown(signalisStar, 310f, 7000f, 235f);
-        stableLoc3.setCircularOrbitPointingDown(signalisStar, 178f, 15600f, 921f); 
+        stableLoc3.setCircularOrbitPointingDown(signalisStar, 178f, 14600f, 921f); 
 
         //PlanetAPI stream = system.addPlanet("stream"[ID], star[What it orbits], "Stream"[Name you will see in game], "gas_giant"[Planet type], 230[Starring angle of the orbit], 350[Size in pixels, 5000[Orbit Radius], 150[Number of ingame days to complete orbit]);
 
@@ -75,7 +75,7 @@ public class SignalisModSystem {
 
         //Wrecked Station
         CustomCampaignEntityAPI wrecked_station = system.addCustomEntity("signalis_wrecked_station", "Abandoned Orbital Complex 6", "station_side02", "neutral");
-        wrecked_station.setCircularOrbit(vineta, 45f, 865f, 55f);
+        wrecked_station.setCircularOrbitPointingDown(vineta, 45f, 900f, 55f);
         wrecked_station.setInteractionImage("illustrations", "abandoned_station2");
         wrecked_station.setCustomDescriptionId("signalis_wrecked_station");
         Misc.setAbandonedStationMarket("signalis_wrecked_station_market", wrecked_station);
@@ -106,7 +106,7 @@ public class SignalisModSystem {
         system.addRingBand(signalisStar, "misc", "rings_dust0", 256f, 2, Color.gray, 256f, 7800f, 400f);
 
         //GAS GIANT 1, DUST RINGS AND ROTFRONT
-        PlanetAPI gas_giant1 = system.addPlanet("signalis_gas_giant1", signalisStar, "Jove", "gas_giant", 234f, 400f, 10500f, 4330f);
+        PlanetAPI gas_giant1 = system.addPlanet("signalis_gas_giant1", signalisStar, "Jove", "gas_giant", 234f, 400f, 9500f, 4330f);
         gas_giant1.getSpec().setTexture(Global.getSettings().getSpriteName("planets","gas_giant1"));
         gas_giant1.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
         gas_giant1.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
@@ -127,7 +127,7 @@ public class SignalisModSystem {
 
         
         //-GAS GIANT 2, PRETTY RINGS AND HEIMAT-
-        PlanetAPI gas_giant2 = system.addPlanet("signalis_gas_giant2", signalisStar, "Saturnus", "gas_giant", 90f, 370f, 11500f, 1076f);
+        PlanetAPI gas_giant2 = system.addPlanet("signalis_gas_giant2", signalisStar, "Saturnus", "gas_giant", 90f, 370f, 10500f, 1076f);
         gas_giant2.getSpec().setTexture(Global.getSettings().getSpriteName("planets","gas_giant2"));
         gas_giant2.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
         gas_giant2.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
@@ -148,7 +148,7 @@ public class SignalisModSystem {
         system.addRingBand(gas_giant2, "misc", "rings_special0", 256f, 1, Color.white, 256f, 700f, 60f);
 
         //LENG
-        PlanetAPI leng = system.addPlanet("signalis_leng", signalisStar, "Leng", "barren", 180, 80f, 13200f, 3050f);
+        PlanetAPI leng = system.addPlanet("signalis_leng", signalisStar, "Leng", "barren", 180, 80f, 12200f, 3050f);
         ProcgenUsedNames.notifyUsed("Leng");
         leng.getMarket().addCondition(Conditions.COLD);
         leng.getMarket().addCondition(Conditions.LOW_GRAVITY);
