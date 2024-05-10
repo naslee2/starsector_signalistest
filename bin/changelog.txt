@@ -1,0 +1,22 @@
+<Version 0.1.3>
+- Update mod to work in Starsector 0.97a
+
+<Version 0.1.2> Jan 27, 2024
+- Added gate to star system
+- Added empty space station for player storage use.
+- Added descriptions for empty space station
+- Updated descriptions for each planet and some spellcheck.
+- Adjusted star system size from feedback. Star system is now more compact so players won't have to fly an absurd amount of time to go to each planet.
+
+<Version 0.1.1> Jan 22, 2024
+- Update mod to work in Starsector 0.96a 
+- Adjusted and condensed code to make it more readable.
+- Added custom planetary textures for Vineta, Kitezh, and the two gas giants.
+- Added custom planet descriptions.
+- Removed unneeded faction flags
+- Removed unused imports
+- Removed an unused dependency on Nexerlin.
+- Remove dependency on LazyLib.
+
+<Version 0.1.0> Feb 19, 2023
+- Initial Version for Starsector 0.95.1a
